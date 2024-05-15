@@ -11,14 +11,14 @@ require("dotenv").config();
 
 const app = express();
 const port = 3000;
+app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("Welcome to the Project Management Tool Server! 🌐");
-});
+// app.get("/", (req, res) => {
+//   res.send("Welcome to the Project Management Tool Server! 🌐");
+// });
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
 
 app.use("/api", router);
 app.use("/tasks", taskRoutes);
