@@ -2,11 +2,7 @@ const mongoose = require("mongoose");
 
 mongoose
   .connect(
-    "mongodb+srv://abinayaraja1617:Abinaya%401624@cluster0.mj6rrle.mongodb.net/",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
+    "mongodb+srv://abinayaraja1617:Abinaya%401624@cluster0.mj6rrle.mongodb.net/"
   )
   .then(async () => {
     console.log("Connected to MongoDB");
